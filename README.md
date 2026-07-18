@@ -19,11 +19,10 @@ around a small set of composable pieces rather than a single monolithic class:
 
 ## Status
 
-- **Done:** buffer pool (LRU eviction, dirty tracking, flush-to-disk), the `Database` file registry, and heap-file
-  storage (tuple serialization, page-level insert/delete, full-file iteration). Covered by the pa0 and pa1 test
-  suites.
-- **In progress:** the B+Tree index (`BTreeFile`, `IndexPage`, `LeafPage`) — insertion, node splitting, and
-  traversal are not yet implemented.
+- **Done:** buffer pool (LRU eviction, dirty tracking, flush-to-disk), the `Database` file registry, heap-file
+  storage (tuple serialization, page-level insert/delete, full-file iteration), and the B+Tree index
+  (`BTreeFile`, `IndexPage`, `LeafPage` — sorted insertion, node splitting, and leaf traversal). Compiles cleanly
+  end to end; the full `ctest` suite has not yet been run against this build.
 
 ## Documentation
 
